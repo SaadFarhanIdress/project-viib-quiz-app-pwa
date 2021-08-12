@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { fetchQuizQuestions } from './api';
 import QuestionCard from './components/QuestionCard';
 import { AnswerObject, Difficulty, QuestionState } from './types/types';
 import styles from './App.module.css';
+import { configureNotifications } from './services/firebase';
+
+
 const App = () => {
 
   const [loading, setLoading] = useState(false);
@@ -49,6 +52,10 @@ const App = () => {
     }
     setNumber(nextQuestion);
   }
+
+  useEffect(() => {
+    configureNotifications();
+  }, [])
 
   return (<>
    <div className={styles.centeredDiv}>
