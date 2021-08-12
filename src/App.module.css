@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Axiforma-ExtraBold;
+  src: url(./fonts/Axiforma-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: Axiforma-Regular;
+  src: url(./fonts/Axiforma-Regular.otf);
+}
+
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 1301px) {
+  body {
+    background-image: url(./images/background.png);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-image: url(./images/mobile-background.png);
+  }
+}
+
+.centeredDiv {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  font-family: Axiforma-ExtraBold;
+  background-color: white;
+  text-align: center;
+  margin: 10px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .centeredDiv {
+    height: 700px;
+  }
+}
+
+.heading {
+  font-family: Axiforma-ExtraBold;
+}
+
+.startButton {
+  font-family: Axiforma-Regular;
+  padding: 10px;
+  background-color: white;
+  padding-left: 18px;
+  margin: 18px;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.startButton:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 200ms;
+}
+
+.text {
+  font-family: Axiforma-Regular;
+}
+
+.questionNumber {
+  font-family: Axiforma-Regular;
+}
+
+.options {
+  font-family: Axiforma-Regular;
+  padding: 10px;
+  background-color: white;
+  width: 250px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.options:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 200ms;
+}
+
+.bottomDiv {
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  font-family: Axiforma-ExtraBold;
+  background-color: white;
+  margin: 10px !important;
+}
+
+.right {
+  background-color: green;
+  color: white;
+}
+
+.wrong {
+  background-color: red;
+  color: white;
+}
